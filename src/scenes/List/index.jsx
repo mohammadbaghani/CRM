@@ -1,13 +1,14 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockDataInvoices } from "../../data/mockData";
+import { mockDataList } from "../../data/mockData";
 import Header from "../../components/Header";
 import { useState } from "react";
-const Invoices = () => {
+import "./index.css";
+const List = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const [ne, setNe] = useState(mockDataInvoices);
+  const [ne, setNe] = useState(mockDataList);
   const columns = [
     {
       field: "phone",
@@ -28,16 +29,16 @@ const Invoices = () => {
             justifyContent="center"
             borderRadius="4px" > <button className="pluse"
               onClick={() => addnumber(params.row.id)}>*
-            </button>      <button className="minus"
+            </button>      <button className="pluse"
               onClick={() => minus(params.row.id)}>%
             </button>
-            <button className="pluse"
-              onClick={() => zero(params.row.id)}>Z
+            <button className="pluse zero"
+              onClick={() => zero(params.row.id)}>0
             </button>       <button className="pluse"
               onClick={() => ten(params.row.id)}>+
             </button>
             <button className="pluse"
-              onClick={() => self(params.row.id)}>S
+              onClick={() => self(params.row.id)}>You
             </button>
           </Box>
         );
@@ -160,10 +161,10 @@ const Invoices = () => {
           },
         }}
       >
-        <DataGrid checkboxSelection rows={mockDataInvoices} columns={columns} />
+        <DataGrid checkboxSelection rows={mockDataList} columns={columns} />
       </Box>
     </Box>
   );
 };
 
-export default Invoices;
+export default List;

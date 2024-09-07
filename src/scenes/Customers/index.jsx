@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
-import { mockDataTeam } from "../../data/mockData";
+import { mockDataCustomers } from "../../data/mockData";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { Button } from "@material-ui/core";
@@ -12,8 +12,8 @@ import * as React from 'react';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import { createContext } from 'react'
-const Team = () => {
-  const [ne, setNe] = useState(mockDataTeam);
+const Customers = () => {
+  const [ne, setNe] = useState(mockDataCustomers);
   const [userinput, setUserinput] = useState('');
   const [useremail, setUseremail] = useState('');
   const [phone, setPhone] = useState('');
@@ -200,7 +200,7 @@ const Team = () => {
   return (<>
 
     <Box m="20px">
-      <Header title="" subtitle="لیست مشتریان ساینا تجارت افراز" className="ff" />
+      <Header title="" subtitle="لیست مشتریان تدبیر تجارت سپهر" className="ff" />
       <Box
         m="40px 0 0 0"
         height="75vh"
@@ -250,4 +250,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Customers;

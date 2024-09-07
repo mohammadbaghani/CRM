@@ -7,12 +7,12 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { tokens } from "../../theme";
 import "./index.css";
-const FAQ = () => {
+const Questions = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
     <Box m="20px">
-      <Header title="" subtitle="راهنمای استفاده از نرم افزار مدیریت مشتریان ساینا" className="aco-title" />
+      <Header title="" subtitle="راهنمای استفاده از نرم افزار مدیریت مشتریان تدبیر" className="aco-title" />
       <Accordion >
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} className="aco-title" variant="h5">
@@ -24,23 +24,21 @@ const FAQ = () => {
             به بخش موجودی انبار بروید
             <br>
             </br>
-            z    صفر = تعداد کالا
+            0 :    صفر
             <br>
             </br>
-            +    به علاوه ده = تعداد کالا
-            <br>
-            </br>
-            *  ضربدر ده = تعداد کالا
+            * : ضربدر ده
 
             <br>
             </br>
-            %   تقیسم بر ده = تعداد کالا
+            +  :  به علاوه ده
             <br>
+
             </br>
-            *  ضربدر ده = تعداد کالا
+            % :  تقیسم بر ده
             <br>
-            </br>
-            S   خودتان انتخاب می کنید = تعداد کالا
+                 </br>
+            You  : با انتخاب خودتان
           </Typography>
         </AccordionDetails>
       </Accordion>   <Accordion >
@@ -57,13 +55,13 @@ const FAQ = () => {
             یک روز از تقویم را انتخاب نمایید
             <br>
             </br>
-            نام رویداد را وارد نمایید
+            نام رویداد را وارد نمایید  
+            و
+              ok را بزنید
+                  
             <br>
             </br>
-            ok را بزنید
-            <br>
-            </br>
-            🙂 حالا رویداد شما با تاریخ آن ثبت شده است
+           حالا رویداد شما با تاریخ آن ثبت شده است  🙂
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -102,4 +100,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default Questions;

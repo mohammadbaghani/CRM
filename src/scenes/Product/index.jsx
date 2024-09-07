@@ -1,6 +1,6 @@
 
 import { Box } from "@mui/material";
-import { mockDataTeam } from "../../data/mockData";
+import { mockDataCustomers } from "../../data/mockData";
 import Header from "../../components/Header";
 import { useState } from "react";
 import { useParams } from 'react-router-dom';
@@ -8,12 +8,12 @@ import './Product.css'
 export default function Product() {
   let params = useParams()
 
-  const [ne, setNe] = useState(mockDataTeam);
+  const [ne, setNe] = useState(mockDataCustomers);
   let mm = ne.find(v => v.id == params.productID)
   return (
     <Box m="20px" className="customer">
       <Header
-        title={mockDataTeam.name}
+        title={mockDataCustomers.name}
         subtitle="مشخصات جزئی مشتری"
       />
       <p className="customer-name">
@@ -21,7 +21,7 @@ export default function Product() {
         {mm.name}
       </p>
       <p>
-        مدت همکاری با ساینا :
+        مدت اشتراک کارت فروشگاه :
         {mm.corelate}
       </p>
       <p>

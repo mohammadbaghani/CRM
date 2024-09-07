@@ -77,7 +77,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  Saina
+                  Tadbir
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -93,7 +93,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/saina.png`} className="saina-image"
+                  src={`../../assets/sain.png`} className="Tadbir-image"
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -104,7 +104,7 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                   className="ee">
-                  مدیریت مشتریان ساینا
+                  مدیریت مشتریان تدبیر
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]} className="aa">
                   صرف زمان کمتر = موفقیت بیشتر
@@ -131,7 +131,7 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="پنل مشتریان"
-              to="/team"
+              to="/Customers"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -139,7 +139,7 @@ const Sidebar = () => {
 
             <Item
               title="موجودی انبار"
-              to="/invoices"
+              to="/List"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
@@ -162,7 +162,7 @@ const Sidebar = () => {
             />
             <Item
               title="راهنمای استفاده"
-              to="/faq"
+              to="/Questions"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
