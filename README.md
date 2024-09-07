@@ -2,5 +2,5 @@
 ### کدهای پروژه در برنچ مستر هستند ###
 <br>
 </br>
-# CRM Soft ware project #
+# CRM Software project #
 Codes of project  are in branch master
