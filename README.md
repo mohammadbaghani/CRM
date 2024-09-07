@@ -2,7 +2,7 @@
 ### کدهای پروژه در برنچ مستر هستند ###
 <br>
 </br>
-# CRM Software project with React JS#
+CRM Software project with React JS
 <br>
 </br>
-Codes are in the branch master
+***Codes are in the branch master***
