@@ -5,6 +5,4 @@ https://baghani-crm.liara.run
 <br>
 </br>
 CRM Software project with React JS
-<br>
-</br>
 Codes are in the branch master
